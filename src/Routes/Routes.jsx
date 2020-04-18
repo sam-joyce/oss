@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router } from "@reach/router";
+import { Router, Redirect } from "@reach/router";
 
 import HomePage from '../Components/HomePage/HomePage';
 import AboutPage from "../Components/AboutPage/AboutPage";
@@ -17,6 +17,7 @@ class Routes extends Component {
           <AboutPage path="/about" />
           <DisclaimerPage path="/disclaimer" />
           <ContactPage path="/contact" />
+          {/* <Redirect from="" to="/home" /> */}
         </Router>
       </>
     );
