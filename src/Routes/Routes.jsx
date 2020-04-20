@@ -13,7 +13,7 @@ class Routes extends Component {
     return (
       <>
         <Router>
-          <HomePage path="/home" />
+          <HomePage path="/" />
           <AboutPage path="/about" />
           <DisclaimerPage path="/disclaimer" />
           <ContactPage path="/contact" />

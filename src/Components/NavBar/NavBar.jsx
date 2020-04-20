@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "@reach/router";
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import {
+  Navbar,
+  Nav
+} from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import styles from "./NavBar.module.scss";
 import logo from "../Static/Images/oss-logo.png";
@@ -21,11 +23,11 @@ class NavBar extends Component {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href="/home" route="/home">Home</Nav.Link>
-                  <Nav.Link href="/about" route="/about">About</Nav.Link>
-                  <Nav.Link href="/disclaimer" route="/disclaimer">Disclaimer</Nav.Link>
-                  <Nav.Link href="/contact" route="/contact">
-                    <Button variant="danger" className={styles.contact}>Contact Us</Button>
+                  <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                  <Nav.Link><Link to="/about">About</Link></Nav.Link>
+                  <Nav.Link><Link to="/disclaimer">Disclaimer</Link></Nav.Link>
+                  <Nav.Link to="/contact" route="/contact">
+                    <Button variant="danger" className={styles.contact}><Link to="/contact">Contact</Link></Button>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
