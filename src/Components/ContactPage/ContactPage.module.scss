@@ -53,7 +53,7 @@ input {
   align-items: center;
 
   .inner_container {
-    border: 2px solid red;
+    // border: 2px solid red;
     height: 90%;
     width: 85%;
     display: grid;
@@ -93,4 +93,13 @@ input {
   hr {
     height: 100%;
   }
+}
+
+button {
+  margin: 8px 5px;
+  padding: 5px 10px;
+  background-color: #fafafa;
+  border: 1px solid black;
+  color: black;
+  border-radius: 2px;
 }

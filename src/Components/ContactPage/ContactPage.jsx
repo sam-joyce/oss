@@ -9,7 +9,7 @@ class ContactPage extends Component {
         <header className={styles.img_box}>
           <div className={styles.color_overlay}></div>
           <h1>Contact Us</h1>
-          <h2>We'd love to hear from you.</h2>
+          {/* <h2>We'd love to hear from you.</h2> */}
         </header>
 
         <section className={styles.container}>
@@ -44,6 +44,7 @@ class ContactPage extends Component {
                   <h5>Message *</h5>
                   <input type="text" name="message" id={styles.message} />
                 </div>
+                <button>SUBMIT</button>
               </div>
             </div>
             <div></div>
