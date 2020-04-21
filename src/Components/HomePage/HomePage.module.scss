@@ -12,7 +12,7 @@
   .bar_box {
     background: #000 url(../Static/Images/bars.jpg);
     background-size: cover;
-    color: white;
+    color: white !important;
     height: 500px;
     width: 50%;
     overflow: visible;
@@ -39,6 +39,7 @@
 
     p {
       z-index: 3;
+      color: white !important;
     }
 
     button {
@@ -60,7 +61,7 @@
   .sheet_box {
     background: #000 url(../Static/Images/sheets.jpg);
     background-size: cover;
-    color: white;
+    color: white !important;
     height: 500px;
     width: 50%;
     overflow: visible;
@@ -87,6 +88,7 @@
 
     p {
       z-index: 3;
+      color: white !important;
     }
 
     button {
@@ -100,11 +102,7 @@
       border-radius: 5px;
 
       &:hover {
-        transform: translateY(-7px);
-        // width: 5rem;
-        // height: 2rem;
-        // font-size: 18px;
-        transition: 0.4s ease;
+        border: 3px double white;
       }
     }
   }
