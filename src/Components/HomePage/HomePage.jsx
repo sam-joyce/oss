@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
 import rig from "../Static/Images/oss-rig.png";
 
+import Button from "../Utility/Button/Button";
+
 class HomePage extends Component {
   state = {}
   render() {
@@ -9,16 +11,18 @@ class HomePage extends Component {
       <>
         <div className={styles.container}>
           <div className={styles.bar_box}>
-            <div className={styles.color_overlay}></div>
+            <div className={styles.color_overlay1}></div>
             <h1>LOOKING FOR <br/>BAR</h1>
             <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size if required.</p>
-            <button>Bar</button>
+            {/* <button>Bar</button> */}
+            <Button text={`Bar`}/>
           </div>
           <div className={styles.sheet_box}>
-            <div className={styles.color_overlay}></div>
+            <div className={styles.color_overlay2}></div>
             <h1>LOOKING FOR <br/>SHEET</h1>
             <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance.</p>
-            <button>Sheet</button>
+            {/* <button>Sheet</button> */}
+            <Button handleClick={console.log("clicked")} text={`Sheet`}/>
           </div>
         </div>
         <div className={styles.intro}>
