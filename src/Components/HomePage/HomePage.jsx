@@ -18,7 +18,9 @@ class HomePage extends Component {
           <article className={styles.bar_box}>
             <div>
               <h4>Looking for <br /> <span>BAR</span></h4>
+              <hr/>
               <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size if required.</p>
+              <hr/>
               <a href="*">
                 <FaAngleDoubleRight className={styles.button} />
               </a>
@@ -27,7 +29,9 @@ class HomePage extends Component {
           <article className={styles.sheet_box}>
             <div>
               <h4>Looking for <br /> <span>SHEET</span></h4>
+              <hr/>
               <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance.</p>
+              <hr/>
               <a href="*">
                 <FaAngleDoubleRight className={styles.button} />
               </a>
