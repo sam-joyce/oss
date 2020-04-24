@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styles from "./ProductPage.module.scss";
 
+import ResponsivePlayer from "./ResponsivePlayer/ResponsivePlayer";
+
 import { FaCheck } from 'react-icons/fa';
 import { FaClipboardList } from 'react-icons/fa';
 import { FaFile } from 'react-icons/fa';
@@ -15,7 +17,7 @@ class ProductPage extends Component {
           <div className={styles.inner_container}>
             <section className={styles.column1}>
               <article className={styles.video}>
-                Video
+                <ResponsivePlayer />
               </article>
               <article className={styles.noticeBoard}>
                 Noticeboard

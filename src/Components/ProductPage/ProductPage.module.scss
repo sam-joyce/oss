@@ -1,3 +1,5 @@
+@import "~video-react/styles/scss/video-react";
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +38,8 @@
       .video {
         width: 95%;
         height: 30%;
-        background-color: greenyellow;
+        // background-color: greenyellow;
+        z-index: 2;
       }
 
       .noticeBoard {
@@ -67,7 +70,7 @@
         width: 95%;
         height: 22%;
         border-radius: 5px;
-        color: white;
+        color: rgb(244, 242, 242);
         text-align: center;
 
         h4 {
@@ -75,8 +78,13 @@
         }
 
         a {
-          color: white;
+          color: rgb(244, 242, 242);
           font-size: 30px;
+
+          &:hover {
+            font-size: 32px;
+            transition: 0.2s ease;
+          }
         }
       }
     }
