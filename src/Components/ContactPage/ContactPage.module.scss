@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h5, p {
+h6, p {
   color: rgba(29,29,29,.7);
 }
 
@@ -39,8 +39,10 @@ input {
     position: absolute;
   }
 
-  h1, h2 {
+  h1 {
     z-index: 3;
+    font-weight: bold;
+    font-size: 48px;
   }
 }
 
@@ -61,7 +63,7 @@ input {
 
     div {
       // border: 2px solid green;
-      padding: 2px 5px;
+      padding-right: 5px;
     }
   }
 }

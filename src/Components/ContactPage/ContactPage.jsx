@@ -16,9 +16,9 @@ class ContactPage extends Component {
             <div>
               <div className={styles.form_wrapper}>
                 <div>
-                  <p>If you would like to get in touch with us, please complete the form below or call us on the number shown. Click the location map on the right hand side for directions on how to find us:</p>
+                  <p>If you would like to get in touch with us, please complete the form below or call us on the number shown. Click the location map on the right hand side for directions on how to find us. <br/> All fields are mandatory.</p>
                   <fieldset>
-                    <h5>Name *</h5>
+                    {/* <h5>Name *</h5> */}
                     <section id={styles.names_box}>
                       <div>
                         <input type="text" name="fname" />
@@ -31,18 +31,33 @@ class ContactPage extends Component {
                     </section>
                   </fieldset>
                 </div>
-                <div>
+                <section id={styles.names_box}>
+                  <div>
+                    <input type="text" name="email" />
+                    <span>Email</span>
+                  </div>
+                  <div>
+                    <input type="text" name="cname" />
+                    <span>Company Name</span>
+                  </div>
+                </section>
+
+                {/* <div>
                   <h5>Email *</h5>
                   <input type="email" name="email" />
-                </div>
-                <div>
-                  <h5>Subject *</h5>
-                  <input type="text" name="subject" />
-                </div>
-                <div>
-                  <h5>Message *</h5>
+                </div> */}
+                <section id={styles.names_box}>
+                  <div>
+                    <input type="text" name="subject" />
+                    <span>Subject</span>
+                  </div>
+                </section>
+                <section id={styles.names_box}>
+                  <div>
                   <input type="text" name="message" id={styles.message} />
-                </div>
+                    <span>Message</span>
+                  </div>
+                </section>
                 <button id={styles.submit}>SUBMIT</button>
               </div>
             </div>
