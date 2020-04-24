@@ -27,7 +27,7 @@ class NavBar extends Component {
                   <Nav.Link><Link to="/about">About</Link></Nav.Link>
                   <Nav.Link><Link to="/disclaimer">Disclaimer</Link></Nav.Link>
                   <Nav.Link to="/contact" route="/contact">
-                    <Button variant="danger" className={styles.contact}><Link to="/contact">Contact</Link></Button>
+                    <Button variant="secondary" className={styles.contact}><Link to="/contact">Contact</Link></Button>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>

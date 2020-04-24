@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import styles from "./ProductPage.module.scss";
 
+import { FaCheck } from 'react-icons/fa';
+import { FaClipboardList } from 'react-icons/fa';
+import { FaFile } from 'react-icons/fa';
+import { FaHandshake } from 'react-icons/fa';
+
 class ProductPage extends Component {
   state = {}
-  render() { 
+  render() {
     return (
       <>
         <div className={styles.container}>
@@ -22,10 +27,22 @@ class ProductPage extends Component {
               </article>
             </section>
             <section className={styles.column3}>
-              <article>Approvals</article>
-              <article>Tech Datasheets</article>
-              <article>Product Literature</article>
-              <article>Legal Information</article>
+              <article>
+                <h4>Approvals</h4>
+                <a href=""><FaCheck /></a>
+              </article>
+              <article>
+                <h4>Tech Datasheets</h4>
+                <a href=""><FaClipboardList /></a>
+              </article>
+              <article>
+                <h4>Product Literature</h4>
+                <a href=""><FaFile /></a>
+              </article>
+              <article>
+                <h4>Legal Information</h4>
+                <a href=""><FaHandshake /></a>
+              </article>
             </section>
           </div>
         </div>
@@ -33,5 +50,5 @@ class ProductPage extends Component {
     );
   }
 }
- 
+
 export default ProductPage;
