@@ -7,6 +7,7 @@ import { FaCheck } from 'react-icons/fa';
 import { FaClipboardList } from 'react-icons/fa';
 import { FaFile } from 'react-icons/fa';
 import { FaHandshake } from 'react-icons/fa';
+import ProductList from './ProductList/ProductList';
 
 class ProductPage extends Component {
   state = {}
@@ -25,7 +26,7 @@ class ProductPage extends Component {
             </section>
             <section className={styles.column2}>
               <article className={styles.productList}>
-                Product List
+                <ProductList />
               </article>
             </section>
             <section className={styles.column3}>
