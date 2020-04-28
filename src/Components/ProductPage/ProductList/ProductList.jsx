@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styles from "./ProductList.module.scss";
-import { firestore } from "../../../firebase";
-
-import SearchBar from "./SearchBar/SearchBar";
 import Product from "../Product/Product";
+import { firestore } from "../../../firebase";
+import SearchBar from "./SearchBar/SearchBar";
+
 
 class ProductList extends Component {
   state = {
@@ -14,14 +14,10 @@ class ProductList extends Component {
 
   setSearchText = (event)  => {
     const searchText = event.target.value;
-    this.setState({ searchText }, this.filteredProducts)
-  }
-
-  filteredProducts = () => {
     let filteredProducts = this.state.products.filter(products => {
-      return products.name.includes(this.state.searchText);
+      return products.name.includes(searchText);
     })
-    this.setState({ filteredProducts })
+    this.setState({ searchText, filteredProducts })
   }
 
   componentDidMount() {
@@ -30,6 +26,7 @@ class ProductList extends Component {
       .get()
       .then((query) => {
         const products = query.docs.map(doc => doc.data());
+        console.log('anything');
         this.setState({
           products: products,
           filteredProducts: products
@@ -38,7 +35,7 @@ class ProductList extends Component {
   }
 
   render() { 
-    console.log(this.SearchText);
+    console.log(this.state.searchText);
     return (
       <>
         <SearchBar searchText={this.state.searchText} setSearchText={this.setSearchText}/>
