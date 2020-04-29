@@ -1,6 +1,6 @@
 This project was created using [Create React App](https://github.com/facebook/create-react-app).
 
-Website URL: https://offshorestainless.com
+Website URL: https://offshore-stainless.firebaseapp.com
 
 This is a complete website build for a local SME that was started the week after I finished my coding bootcamp.
 The finished product will contain the following key features:

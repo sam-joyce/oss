@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
+import { Link } from "@reach/router";
 
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
@@ -21,9 +22,9 @@ class HomePage extends Component {
               <hr/>
               <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size if required.</p>
               <hr/>
-              <a href="*">
+              <Link to="/products">
                 <FaAngleDoubleRight className={styles.button} />
-              </a>
+              </Link>
             </div>
           </article>
           <article className={styles.sheet_box}>
@@ -32,9 +33,9 @@ class HomePage extends Component {
               <hr/>
               <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance.</p>
               <hr/>
-              <a href="*">
+              <Link to="/products">
                 <FaAngleDoubleRight className={styles.button} />
-              </a>
+              </Link>
             </div>
           </article>
         </section>
