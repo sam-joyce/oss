@@ -1,70 +1,42 @@
 import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
 import { Link } from "@reach/router";
+import SlideShow from "./SlideShow/SlideShow";
 
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaRegPlayCircle } from 'react-icons/fa';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { BsListCheck } from 'react-icons/bs';
+
 
 class HomePage extends Component {
   state = {}
   render() {
     return (
       <>
+        <SlideShow />
         <section className={styles.welcome}>
           <div className={styles.innerText}>
             <h1>Welcome to <span>Offshore Stainless.</span></h1>
             <p>We have are a UK based company. We have been supporting our customers across the globe for over 20 years with their stainless steel and nickel alloy requirements.</p>
+            <p>We understand the importance of your time, so our sales team are on hand and ready to give quotes before the end of the day. We are not only a stockholder. Our 'all-in-one' operation allows us to be quicker than anyone else in cutting, grinding and finishing any order that you place with us. Our own fleet of delivery lorries then ensure there are no delays with your order leaving our factory once it is ready, meaning it can be at your front door that same day.</p>
+            <br/>
+            <h5>ISO 9001:2015 Quality Accredited</h5>
+            <p>We are fully ISO 9001: 2015 accredited, demonstrating that we have a Quality Management System that is reviewed annually and audited externally every 3 years. This ensures we can consistently provide products and services that meet customer and applicable statutory and regulatory requirements. This accreditation provides assurance on our promise that you will always receive your ordered material on time!</p>
           </div>
         </section>
-        <section className={styles.container}>
-          <article className={styles.bar_box}>
-            <div>
-              <h4>Looking for <br /> <span>BAR</span></h4>
-              <hr/>
-              <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size if required.</p>
-              <hr/>
-              <Link to="/products">
-                <FaAngleDoubleRight className={styles.button} />
-              </Link>
-            </div>
-          </article>
-          <article className={styles.sheet_box}>
-            <div>
-              <h4>Looking for <br /> <span>SHEET</span></h4>
-              <hr/>
-              <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance.</p>
-              <hr/>
-              <Link to="/products">
-                <FaAngleDoubleRight className={styles.button} />
-              </Link>
-            </div>
-          </article>
-        </section>
-
-
-        {/* <div className={styles.container}>
-          <div className={styles.intro}>
-            <section className={styles.content}>
-              <img src={rig} alt="oil rig from company logo" />
-              <h4>Welcome to Offshore Stainless Supplies Ltd</h4>
-              <p>We have are a UK based company. We have been supporting our customers across the globe for over 20 years with their stainless steel and nickel alloy requirements.</p>
-              <button>About us</button>
+        <section className={styles.hp_container}>
+          <article className={styles.hp_buttons}>
+            <section>
+              <h3>Company Video <span><FaRegPlayCircle /></span></h3>
             </section>
-          </div>
-          <div className={styles.bar_box}>
-            <div className={styles.color_overlay1}></div>
-            <h1>LOOKING FOR <br />BAR</h1>
-            <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size if required.</p>
-           
-            <Button text={`Bar`} />
-          </div>
-          <div className={styles.sheet_box}>
-            <div className={styles.color_overlay2}></div>
-            <h1>LOOKING FOR <br />SHEET</h1>
-            <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance.</p>
-           
-            <Button handleClick={console.log("clicked")} text={`Sheet`} />
-          </div>
-        </div> */}
+            <section>
+              <h3>Connect on LinkedIn <span><AiOutlineLinkedin /></span></h3>
+            </section>
+            <section>
+              <h3>Our Accreditations <span><BsListCheck /></span></h3>
+            </section>
+          </article>
+        </section>
       </>
     );
   }
