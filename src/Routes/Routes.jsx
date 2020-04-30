@@ -6,6 +6,8 @@ import AboutPage from "../Components/AboutPage/AboutPage";
 import DisclaimerPage from "../Components/DisclaimerPage/DisclaimerPage";
 import ContactPage from "../Components/ContactPage/ContactPage";
 import ProductPage from "../Components/ProductPage/ProductPage";
+import Accreditations from '../Components/Accreditations/Accreditations';
+import TechnicalPage from '../Components/TechnicalPage/TechnicalPage';
 
 
 class Routes extends Component {
@@ -33,6 +35,8 @@ class Routes extends Component {
           <DisclaimerPage path="/disclaimer" />
           <ContactPage path="/contact" />
           <ProductPage path="/products" />
+          {/* <Accreditations path="/accreditations" /> */}
+          <TechnicalPage path="/technical" />
           {/* <Redirect from="" to="/home" /> */}
         </Router>
       </>
