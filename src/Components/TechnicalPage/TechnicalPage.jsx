@@ -6,6 +6,8 @@ import {
 } from "react-bootstrap";
 
 import Accreditations from '../Accreditations/Accreditations';
+import BarAccreditationList from './BarAccreditationList/BarAccreditationList';
+import SheetAccreditationList from './SheetAccreditationList/SheetAccreditationList';
 
 class TechnicalPage extends Component {
   render() {
@@ -15,10 +17,10 @@ class TechnicalPage extends Component {
         <section>
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
             <Tab eventKey="home" title="Sheet">
-              <h1>Sheet</h1>
+              <SheetAccreditationList />
             </Tab>
             <Tab eventKey="profile" title="Bar">
-              <h1>Bar</h1>
+                <BarAccreditationList />
             </Tab>
           </Tabs>
         </section>
