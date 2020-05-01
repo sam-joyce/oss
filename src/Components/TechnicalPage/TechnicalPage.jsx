@@ -15,11 +15,11 @@ class TechnicalPage extends Component {
       <>
         <Accreditations />
         <section>
-          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-            <Tab eventKey="home" title="Sheet">
+          <Tabs defaultActiveKey="bar" id="uncontrolled-tab-example">
+            <Tab eventKey="sheet" title="Sheet">
               <SheetAccreditationList />
             </Tab>
-            <Tab eventKey="profile" title="Bar">
+            <Tab eventKey="bar" title="Bar">
                 <BarAccreditationList />
             </Tab>
           </Tabs>

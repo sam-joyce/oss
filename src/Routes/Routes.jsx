@@ -8,6 +8,8 @@ import ContactPage from "../Components/ContactPage/ContactPage";
 import ProductPage from "../Components/ProductPage/ProductPage";
 import Accreditations from '../Components/Accreditations/Accreditations';
 import TechnicalPage from '../Components/TechnicalPage/TechnicalPage';
+import ProcessingPage from '../Components/ProcessingPage/ProcessingPage';
+import AlloyPage from '../Components/AlloyPage/AlloyPage';
 
 
 class Routes extends Component {
@@ -32,9 +34,11 @@ class Routes extends Component {
             sheetProductsPage={this.sheetProductsPage}
           />
           <AboutPage path="/about" />
+          <AlloyPage path="/alloys" />
           <DisclaimerPage path="/disclaimer" />
           <ContactPage path="/contact" />
           <ProductPage path="/products" />
+          <ProcessingPage path="/processing" />
           {/* <Accreditations path="/accreditations" /> */}
           <TechnicalPage path="/technical" />
           {/* <Redirect from="" to="/home" /> */}
