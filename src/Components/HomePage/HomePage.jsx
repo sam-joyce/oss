@@ -30,12 +30,15 @@ class HomePage extends Component {
               <h3>Company Video <span><FaRegPlayCircle /></span></h3>
             </section>
             <section>
-              <h3>Connect on LinkedIn <span><AiOutlineLinkedin /></span></h3>
+              <h3>Connect on LinkedIn <a href="https://www.linkedin.com/company/offshore-stainless-supplies-ltd/" target="_blank" rel="noopener noreferrer"><span><AiOutlineLinkedin /></span></a></h3>
             </section>
             <section>
               <h3>Our Accreditations <span><BsListCheck /></span></h3>
             </section>
           </article>
+        </section>
+        <section>
+          
         </section>
       </>
     );
