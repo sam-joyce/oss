@@ -1,17 +1,35 @@
 import React, { Component } from 'react';
 import styles from "./ProcessingPage.module.scss";
+import { firestore } from "../../firebase";
 import {
   Tabs,
   Tab
 } from "react-bootstrap";
 import ResponsivePlayer from "../ProductPage/ResponsivePlayer/ResponsivePlayer";
+import Boxes from "../Utility/Boxes/Boxes";
 
 import processing1 from "../Static/Images/processing1.jpg";
 import processing2 from "../Static/Images/processing2.jpg";
 import processing3 from "../Static/Images/processing3.jpg";
 
 class ProcessingPage extends Component {
-  state = {}
+  state = {
+    processes: []
+  }
+
+  componentDidMount() {
+    firestore
+      .collection("processes-bar")
+      .get()
+      .then((query) => {
+        const processes = query.docs.map(doc => doc.data());
+        console.log('anything');
+        this.setState({
+          processes: processes,
+        });
+      })
+  }
+
   render() {
     return (
       <>
@@ -35,7 +53,12 @@ class ProcessingPage extends Component {
         <Tabs defaultActiveKey="bar" id="uncontrolled-tab-example">
           <Tab eventKey="sheet" title="Sheet">
           </Tab>
-          <Tab eventKey="bar" title="Bar">
+          <Tab eventKey="bar" title="Bar" className={styles.card_container}>
+            <section className={styles.box}>
+              {this.state.processes.map((bcard, index) => (
+                <Boxes BarCardData={bcard} key={index} />
+              ))}
+            </section>
           </Tab>
         </Tabs>
       </>

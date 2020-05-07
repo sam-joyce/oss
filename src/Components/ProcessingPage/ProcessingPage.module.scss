@@ -50,7 +50,14 @@ header {
   
     article {
       width: 50%;
-      // border: 2px solid gray;
     }
+  }
+}
+.card_container {
+  background-color: rgb(228, 227, 227);
+
+  .box {
+    width: 40%;
+    margin: auto;
   }
 }
