@@ -6,13 +6,17 @@ class Boxes extends Component {
   render() {
     console.log(this.props);
     return (
-        <Card>
-          <Card.Header>Bar Card</Card.Header>
-          <Card.Body>
-            <Card.Title>{this.props.BarCardData.process}</Card.Title>
-            <Card.Text>{this.props.BarCardData.explanation}</Card.Text>
-          </Card.Body>
-        </Card>
+      <Card>
+        <Card.Header>Process Card</Card.Header>
+        <Card.Body>
+          <Card.Title>
+            {this.props.cardData.process}
+          </Card.Title>
+          <Card.Text>
+            {this.props.cardData.explanation}
+          </Card.Text>
+        </Card.Body>
+      </Card>
     );
   }
 }

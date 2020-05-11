@@ -14,7 +14,8 @@ import processing3 from "../Static/Images/processing3.jpg";
 
 class ProcessingPage extends Component {
   state = {
-    processes: []
+    processes: [],
+    processesB: []
   }
 
   componentDidMount() {
@@ -24,13 +25,28 @@ class ProcessingPage extends Component {
       .then((query) => {
         const processes = query.docs.map(doc => doc.data());
         console.log('anything');
+        // insert firestore section from below to avoid setting state twice
         this.setState({
-          processes: processes,
+          processes: processes
         });
       })
+      .then(
+        firestore
+          .collection("processes-sheet")
+          .get()
+          .then((query) => {
+            const processes = query.docs.map(doc => doc.data());
+            console.log('anything');
+            this.setState({
+              processesB: processes
+            });
+          })
+      )
   }
 
+
   render() {
+    console.log(this.state.processes);
     return (
       <>
         <header>
@@ -51,12 +67,17 @@ class ProcessingPage extends Component {
           </article>
         </section>
         <Tabs defaultActiveKey="bar" id="uncontrolled-tab-example">
-          <Tab eventKey="sheet" title="Sheet">
+          <Tab eventKey="sheet" title="Sheet" className={styles.card_container}>
+            <section className={styles.box}>
+              {this.state.processesB.map((scard, index) => (
+                <Boxes cardData={scard} key={index} />
+              ))}
+            </section>
           </Tab>
           <Tab eventKey="bar" title="Bar" className={styles.card_container}>
             <section className={styles.box}>
               {this.state.processes.map((bcard, index) => (
-                <Boxes BarCardData={bcard} key={index} />
+                <Boxes cardData={bcard} key={index} />
               ))}
             </section>
           </Tab>
