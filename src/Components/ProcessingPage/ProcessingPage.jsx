@@ -24,7 +24,7 @@ class ProcessingPage extends Component {
       .get()
       .then((query) => {
         const processes = query.docs.map(doc => doc.data());
-        console.log('anything');
+        // console.log('anything');
         // insert firestore section from below to avoid setting state twice
         this.setState({
           processes: processes
@@ -36,7 +36,7 @@ class ProcessingPage extends Component {
           .get()
           .then((query) => {
             const processes = query.docs.map(doc => doc.data());
-            console.log('anything');
+            // console.log('anything');
             this.setState({
               processesB: processes
             });
@@ -46,7 +46,7 @@ class ProcessingPage extends Component {
 
 
   render() {
-    console.log(this.state.processes);
+    // console.log(this.state.processes);
     return (
       <>
         <header>
