@@ -4,27 +4,56 @@
   box-sizing: border-box;
 }
 
-.card_container {
+.header {
+  padding-left: 20px;
   background-color: rgb(228, 227, 227);
-  
-  .container {
-    width: 100%;
-    margin-top: 10px;
-    padding-top: 5px;
-  
-    article {
-      background-color: forestgreen;
+
+  h1 {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  hr {
+    width: 40%;
+    height: 20px;
+    color: black;
+    text-align: left !important;
+  }
+}
+
+.card_container {
+  padding: 40px;
+  width: 100%;
+
+  article:nth-child(1), article:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  article:nth-child(2), article:nth-child(4) {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+  }
+
+  .stock {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 300px;
+    margin: 20px;
+
+    .wording {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    img {
       height: 300px;
-      width: 80%;
-      margin: 20px auto;
-    }
-
-    article:nth-child(1), article:nth-child(3) {
-      margin-left: 50px;
-    }
-
-    article:nth-child(2), article:nth-child(4) {
-      margin-right: 50px;
+      width: 35%;
+      border-radius: 5px;
     }
   }
 }

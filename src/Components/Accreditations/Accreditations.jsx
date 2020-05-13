@@ -8,9 +8,9 @@ class Accreditations extends Component {
     return (
       <>
       <h1>Accreditations</h1>
-      <hr/>
+      <hr className={styles.hrs}/>
       <p className={styles.first_p}>Please see below our companies range of accreditations, all available for download. Inside the two tabs are also our Bar and Sheet specific accreditations.</p>
-      <hr/>
+      <hr className={styles.hrs}/>
       <section className={styles.accreditations}>
         <article>
         <p>Accreditation <FaDownload /></p>
