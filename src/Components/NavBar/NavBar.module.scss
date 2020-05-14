@@ -50,3 +50,17 @@ a {
     color: white !important;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .nav_container {
+    height: 60px;
+
+    .section_one {
+      height: 60px;
+
+      img {
+        height: 45px;
+      }
+    }
+  }
+}

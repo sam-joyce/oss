@@ -4,9 +4,8 @@ Website URL: https://offshore-stainless.firebaseapp.com
 
 This is a complete website build for a local SME that was started the week after I finished my coding bootcamp.
 The finished product will contain the following key features:
-- A CMS to allow them to update the company noticeboard
+- A CMS to allow employees to update the company noticeboard
 - Connection to a Node backend in order to receive Business Development enquiries from the contact form
-- Product finder linked to the databse of stocked products
 
 ## Available Scripts
 

@@ -65,3 +65,44 @@ header {
     padding: 20px 0;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .processing_images {
+    height: 250px;
+  }
+
+  .video_wrapper {
+    .video {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .card_container {
+    .box {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .processing_images {
+    height: 210px;
+  }
+
+  .video_wrapper {
+    .video {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .card_container {
+    .box {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+}
