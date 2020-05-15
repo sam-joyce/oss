@@ -109,3 +109,19 @@ iframe {
   height: 200px; 
   border: 1px solid #ccc;
 }
+
+@media screen and (max-width: 1220px) {
+  .container {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    height: 1200px;
+
+    .inner_container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
