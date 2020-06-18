@@ -56,9 +56,9 @@ class ProcessingPage extends Component {
           <hr />
         </header>
         <section className={styles.processing_images}>
-          <img src={processing1} alt="" />
-          <img src={processing2} alt="" />
-          <img src={processing3} alt="" />
+          <img src={processing1} alt="1. processing at Offshore" />
+          <img src={processing2} alt="2. processing at Offshore" />
+          <img src={processing3} alt="3. processing at Offshore" />
         </section>
         <section className={styles.video_wrapper}>
           <article className={styles.video}>

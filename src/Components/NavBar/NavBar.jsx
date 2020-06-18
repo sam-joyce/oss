@@ -29,7 +29,6 @@ class NavBar extends Component {
                   <Nav.Link><Link to="/products">Products</Link></Nav.Link>
                   <Nav.Link><Link to="/processing">Processing</Link></Nav.Link>
                   <Nav.Link><Link to="/technical">Technical</Link></Nav.Link>
-                  {/* <Nav.Link><Link to="/disclaimer">Disclaimer</Link></Nav.Link> */}
                   <Nav.Link to="/contact" route="/contact">
                     <Button variant="secondary" className={styles.contact}><Link to="/contact">Contact</Link></Button>
                   </Nav.Link>

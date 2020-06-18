@@ -2,7 +2,7 @@ This project was created using [Create React App](https://github.com/facebook/cr
 
 Website URL: https://offshore-stainless.firebaseapp.com
 
-This is a complete website build for a local SME that was started the week after I finished my coding bootcamp.
+This is a complete website build for a local SME that was complated after I finished my coding bootcamp.
 The finished product will contain the following key features:
 - A CMS to allow employees to update the company noticeboard
 - Connection to a Node backend in order to receive Business Development enquiries from the contact form
