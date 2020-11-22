@@ -35,7 +35,7 @@ class AboutPage extends Component {
         </div>
         <div className={styles.about_header}>
           <h2>An offshore experience like you've never had before</h2>
-          <p>We are a professional, transparent team with over 20 years experience serving many industries such as olio and gas, communications and government.</p>
+          <p>We are a professional, transparent team with over 20 years experience serving many industries such as oil and gas, communications and government.</p>
         </div>
         <article className={styles.about_items}>
           {infos.map((info, index) => <AboutItem info={info} key={index} />)}

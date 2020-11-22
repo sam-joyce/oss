@@ -33,7 +33,7 @@ class HomePage extends Component {
               </div>
               <div className={styles.card_info}>
                 <h3>Company Video</h3>
-                <p>Click below to find out a bit more about OSSL and how we work.</p>
+                <p>Click below to find out a bit more about Offshore Stainless and how we work.</p>
                 <button>Watch</button>
               </div>
             </section>

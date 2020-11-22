@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2689ec9.chunk.css",
-    "main.js": "/static/js/main.7479bb30.chunk.js",
-    "main.js.map": "/static/js/main.7479bb30.chunk.js.map",
+    "main.css": "/static/css/main.ca4fefbc.chunk.css",
+    "main.js": "/static/js/main.34414ccd.chunk.js",
+    "main.js.map": "/static/js/main.34414ccd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34edc6e3.js",
     "runtime-main.js.map": "/static/js/runtime-main.34edc6e3.js.map",
-    "static/css/2.782d5aff.chunk.css": "/static/css/2.782d5aff.chunk.css",
-    "static/js/2.dc4bfa0c.chunk.js": "/static/js/2.dc4bfa0c.chunk.js",
-    "static/js/2.dc4bfa0c.chunk.js.map": "/static/js/2.dc4bfa0c.chunk.js.map",
+    "static/css/2.92d9fd43.chunk.css": "/static/css/2.92d9fd43.chunk.css",
+    "static/js/2.14f30f65.chunk.js": "/static/js/2.14f30f65.chunk.js",
+    "static/js/2.14f30f65.chunk.js.map": "/static/js/2.14f30f65.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.04be760fdaab3faf3eac9bbe88b64eee.js": "/precache-manifest.04be760fdaab3faf3eac9bbe88b64eee.js",
+    "precache-manifest.240a2bd192bd4aaf511e2babb9fbf9ab.js": "/precache-manifest.240a2bd192bd4aaf511e2babb9fbf9ab.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.782d5aff.chunk.css.map": "/static/css/2.782d5aff.chunk.css.map",
-    "static/css/main.b2689ec9.chunk.css.map": "/static/css/main.b2689ec9.chunk.css.map",
-    "static/js/2.dc4bfa0c.chunk.js.LICENSE.txt": "/static/js/2.dc4bfa0c.chunk.js.LICENSE.txt",
+    "static/css/2.92d9fd43.chunk.css.map": "/static/css/2.92d9fd43.chunk.css.map",
+    "static/css/main.ca4fefbc.chunk.css.map": "/static/css/main.ca4fefbc.chunk.css.map",
+    "static/js/2.14f30f65.chunk.js.LICENSE.txt": "/static/js/2.14f30f65.chunk.js.LICENSE.txt",
     "static/media/4734.jpg": "/static/media/4734.0e2293fb.jpg",
     "static/media/4926.jpg": "/static/media/4926.9020dd7b.jpg",
     "static/media/5134.jpg": "/static/media/5134.fbf0bb6d.jpg",
-    "static/media/coils.jpg": "/static/media/coils.af656c02.jpg",
     "static/media/ContactPage.module.scss": "/static/media/factory.b6d47786.jpg",
     "static/media/oss-logo.png": "/static/media/oss-logo.bcd0f56d.png",
     "static/media/ossl_certified.jpg": "/static/media/ossl_certified.d54065ea.jpg",
@@ -33,9 +32,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.34edc6e3.js",
-    "static/css/2.782d5aff.chunk.css",
-    "static/js/2.dc4bfa0c.chunk.js",
-    "static/css/main.b2689ec9.chunk.css",
-    "static/js/main.7479bb30.chunk.js"
+    "static/css/2.92d9fd43.chunk.css",
+    "static/js/2.14f30f65.chunk.js",
+    "static/css/main.ca4fefbc.chunk.css",
+    "static/js/main.34414ccd.chunk.js"
   ]
 }
