@@ -1,5 +1,6 @@
 import firebase from "firebase";
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyDCpmt2WNER4XqqJTydYlsSaDC9bbJ35lM",
   authDomain: "offshore-stainless.firebaseapp.com",
@@ -12,7 +13,7 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 
 export const firestore = firebase.firestore();
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from "./Product.module.scss";
-// import Measurements from './Measurements/Measurements';
 
 class Product extends Component {
   render() { 
