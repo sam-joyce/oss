@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
-import { Link } from "@reach/router";
 import SlideShow from "./SlideShow/SlideShow";
-import News from "./News/News";
 
-import { FaRegPlayCircle } from 'react-icons/fa';
-import { AiOutlineLinkedin } from 'react-icons/ai';
-import { BsListCheck } from 'react-icons/bs';
+import video from '../Static/Images/ossl_video.jpg';
+import social from '../Static/Images/ossl_linkedin.jpg';
+import certified from '../Static/Images/ossl_certified.jpg';
 
 
 class HomePage extends Component {
@@ -26,20 +24,42 @@ class HomePage extends Component {
           </div>
         </section>
         <section className={styles.hp_container}>
+          <h2>More information about the business</h2>
+          <hr/>
           <article className={styles.hp_buttons}>
-            <section>
-              <h3>Company Video <span><FaRegPlayCircle /></span></h3>
+            <section className={styles.card}>
+              <div className={styles.card_image}> 
+                <img src={video} alt="video camera"/>
+              </div>
+              <div className={styles.card_info}>
+                <h3>Company Video</h3>
+                <p>Click below to find out a bit more about OSSL and how we work.</p>
+                <button>Watch</button>
+              </div>
             </section>
-            <section>
-              <h3>Connect on LinkedIn <a href="https://www.linkedin.com/company/offshore-stainless-supplies-ltd/" target="_blank" rel="noopener noreferrer"><span><AiOutlineLinkedin /></span></a></h3>
+            <section className={styles.card}>
+              <div className={styles.card_image}>
+                <img src={social} alt="linkedin image"/>
+              </div>
+              <div className={styles.card_info}>
+                <h3>Social Media</h3>
+                <p>Connect with us on LinkedIn to keep up to date with our company progress and news.</p>
+                <a href="https://www.linkedin.com/company/offshore-stainless-supplies-ltd/">
+                  <button>Connect</button>
+                </a>
+              </div>
             </section>
-            <section>
-              <Link to='/technical'><h3>Our Accreditations <span><BsListCheck /></span></h3></Link>
+            <section className={styles.card}>
+              <div className={styles.card_image}>
+                <img src={certified} alt="certified stamp"/>
+              </div>
+              <div className={styles.card_info}>
+                <h3>Accreditations</h3>
+                <p>We are accredited by multiple bodies, click the button below to view an download.</p>
+                <button>Learn</button>
+              </div>
             </section>
           </article>
-        </section>
-        <section>
-        <News />
         </section>
       </>
     );

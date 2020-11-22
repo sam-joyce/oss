@@ -10,6 +10,7 @@ import Accreditations from '../Components/Accreditations/Accreditations';
 import TechnicalPage from '../Components/TechnicalPage/TechnicalPage';
 import ProcessingPage from '../Components/ProcessingPage/ProcessingPage';
 import AlloyPage from '../Components/AlloyPage/AlloyPage';
+import News from '../Components/HomePage/News';
 
 
 class Routes extends Component {
@@ -39,6 +40,7 @@ class Routes extends Component {
           <ContactPage path="/contact" />
           <ProductPage path="/products" />
           <ProcessingPage path="/processing" />
+          <News path="news" />
           {/* <Accreditations path="/accreditations" /> */}
           <TechnicalPage path="/technical" />
           {/* <Redirect from="" to="/home" /> */}

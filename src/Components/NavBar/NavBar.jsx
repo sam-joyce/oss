@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
+
 import { Link } from "@reach/router";
-import {
-  Navbar,
-  Nav
-} from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaPhoneSquare } from 'react-icons/fa';
+
 import styles from "./NavBar.module.scss";
 import logo from "../Static/Images/oss-logo.png";
 
@@ -19,22 +18,24 @@ class NavBar extends Component {
             <img src={logo} alt="Offshore Stainless Logo" />
           </div>
           <div className={styles.section_two}>
-            <Navbar collapseOnSelect expand="lg">
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                  <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                  <Nav.Link><Link to="/about">About</Link></Nav.Link>
-                  <Nav.Link><Link to="/alloys">Alloys</Link></Nav.Link>
-                  <Nav.Link><Link to="/products">Products</Link></Nav.Link>
-                  <Nav.Link><Link to="/processing">Processing</Link></Nav.Link>
-                  <Nav.Link><Link to="/technical">Technical</Link></Nav.Link>
-                  <Nav.Link to="/contact" route="/contact">
-                    <Button variant="secondary" className={styles.contact}><Link to="/contact">Contact</Link></Button>
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
+            <div>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/news">News</Link>
+              <Link to="/products">Products</Link>
+              <Link to="/processing">Processing</Link>
+              <Link to="/technical">Technical</Link>
+            </div>
+          </div>
+          <div className={styles.section_three}>
+            <span>
+              <a href="https://www.linkedin.com/company/offshore-stainless-supplies-ltd/">
+                <AiFillLinkedin />
+              </a>
+              <Link to="contact">
+                <FaPhoneSquare />
+              </Link>
+            </span>
           </div>
         </div>
       </>

@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
 import styles from "./AboutPage.module.scss";
+import infos from "../../data/about_data";
+import AboutItem from "../AboutItem";
 
-import about from "../Static/Images/about.jpg";
-import team from "../Static/Images/team.jpg";
-
+import chris from '../Static/Images/4926.jpg';
+import keith from '../Static/Images/4734.jpg';
+import paul from '../Static/Images/5134.jpg';
 
 class AboutPage extends Component {
   state = {}
   render() {
     return (
-      <section className={styles.container}>
-        <article>
-          <h2>About Us</h2> <br/>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis iste nihil velit! Illum ipsa rem quidem officiis esse deleniti in voluptatibus officia velit! Quod eos, quidem quibusdam error possimus perferendis? <br/> <br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quod molestias incidunt laudantium, ipsa atque repudiandae soluta illo consequatur nesciunt iusto tempore. Provident doloremque dolor ipsam voluptas amet alias hic.</p>
-        </article>
-        <article>
-          <img src={about} alt=""/>
-        </article>
-        <article>
-          <img src={team} alt=""/>
-        </article>
-        <article>
-        <h2>Why Offshore?</h2> <br/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam modi, sunt ipsam illum blanditiis, officia reiciendis necessitatibus natus debitis, quis nisi eligendi. Animi commodi amet eum quasi harum nihil. <br/> <br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia, iure consequatur itaque porro voluptatum labore soluta. Reprehenderit ipsum, a ducimus, explicabo, voluptas animi fugit minima optio cupiditate harum nisi.</p>
+      <section className={styles.about_container}>
+        <div className={styles.about_intro}>
+          <p>WE ARE HERE TO HELP</p>
+          <h2>Our talented team operates to the highest standards to produce high quality products and amazing buying experiences for our customers.</h2>
+        </div>
+        <div className={styles.about_images}>
+          <div>
+            <img src={chris} alt="number one" />
+            <h3>Chris Joyce</h3>
+            <p>Managing Director, Founder</p>
+          </div>
+          <div>
+            <img src={keith} alt="number two" />
+            <h3>Keith Maskell</h3>
+            <p>Commercial Director</p>
+          </div>
+          <div>
+            <img src={paul} alt="number three" />
+            <h3>Paul Kingston</h3>
+            <p>Finance Director</p>
+          </div>
+        </div>
+        <div className={styles.about_header}>
+          <h2>An offshore experience like you've never had before</h2>
+          <p>We are a professional, transparent team with over 20 years experience serving many industries such as olio and gas, communications and government.</p>
+        </div>
+        <article className={styles.about_items}>
+          {infos.map((info, index) => <AboutItem info={info} key={index} />)}
         </article>
       </section>
     );
