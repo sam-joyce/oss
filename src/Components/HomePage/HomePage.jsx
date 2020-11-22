@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
 import { Link } from "@reach/router";
 import SlideShow from "./SlideShow/SlideShow";
+import News from "./News/News";
 
 import { FaRegPlayCircle } from 'react-icons/fa';
 import { AiOutlineLinkedin } from 'react-icons/ai';
@@ -38,7 +39,7 @@ class HomePage extends Component {
           </article>
         </section>
         <section>
-
+        <News />
         </section>
       </>
     );

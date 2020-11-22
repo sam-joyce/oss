@@ -1,0 +1,26 @@
+#title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-weight: bold;
+  border-bottom: 4px solid red;
+  width: 18%;
+}
+
+.noticeboard {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .post {
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 3px;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    overflow: scroll;
+  }
+}
