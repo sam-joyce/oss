@@ -17,7 +17,6 @@ class ProductPage extends Component {
       .collection('steel-bar')
       .get().then((bars) => {
         const items = bars.docs.map((bar) => {
-          console.log(bar.data());
           return bar.data();
         })
         this.setState({ bars: items })
