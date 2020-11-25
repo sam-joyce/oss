@@ -1,12 +1,12 @@
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
 .welcome {
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
+
+  h1 {
+    text-align: left;
+  }
 
   .innerText {
     width: 80%;
