@@ -3,8 +3,16 @@
   margin: 0 auto;
   margin-top: 25px;
   font-weight: bold;
-  border-bottom: 4px solid red;
+  // border-bottom: 4px solid red;
   width: 18%;
+  padding-bottom: 10px;
+}
+
+hr {
+  width: 10%;
+  margin: auto;
+  height: 5px;
+  color: lightgrey;
 }
 
 .noticeboard {

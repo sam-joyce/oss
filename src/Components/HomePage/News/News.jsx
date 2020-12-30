@@ -20,6 +20,7 @@ class News extends React.Component {
     return (
       <>
         <h3 id={styles.title}>Noticeboard</h3>
+        <hr/>
         <section className={styles.noticeboard}>
           {this.state.posts.map(post => {
             return (
