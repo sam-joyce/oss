@@ -6,7 +6,8 @@
 
 a {
   color: black;
-  margin: 0 5px;
+  margin: 0 12px;
+  font-weight: bold;
 
   &:hover {
     color: black;
@@ -18,7 +19,7 @@ a {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 0px 15px 0px #999999;
+  // box-shadow: 0px 0px 15px 0px #999999;
 
   .section_one {
     height: 90%;
@@ -29,20 +30,33 @@ a {
 
     img {
       height: 85%;
-      width: 90%;
+      width: 100%;
       padding-left: 30px;
     }
   }
 
   .section_two {
     height: 100%;
-    width: 50%;
+    width: 45%;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 10px;
+    // margin: 0 10px;
+
+    .contact {
+      background-color: #EE6352;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: white;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 900px) {

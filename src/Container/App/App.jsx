@@ -14,7 +14,7 @@ function App() {
       {/* <ContactBanner /> */}
       <NavBar />
       <Routes />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

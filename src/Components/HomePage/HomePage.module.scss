@@ -1,128 +1,251 @@
-.welcome {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
+@import "../../styles/fonts";
 
-  h1 {
-    text-align: left;
+.landing {
+  width: 100%;
+
+  img {
+    width: 100%;
   }
 
-  .innerText {
-    width: 80%;
-    height: 90%;
-    padding-top: 40px;
+  .text_wrapper {
+    width: 50%;
+    position: relative;
+    margin-top: -40%;
+    margin-left: 130px;
 
-    h5 {
+    h1 {
+      text-align: left;
+      color: white;
       font-weight: bold;
+      line-height: 84px;
+      font-size: 56px;
+
+      span {
+        color: #EE6352;
+      }
     }
+
+    p {
+      color: white;
+      font-size: 14px;
+      line-height: 36px;
+    }
+  }
+}
+
+.second_section {
+  width: 100%;
+  height: 750px;
+  // margin-top: 265px;
+  position: relative;
+  top: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  
+
+  .second_section_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+
+    h2 {
+      border-top: 3px solid #EE6352; 
+      border-left: 3px solid #EE6352;
+      padding: 20px;
+    }
+  }
+
+  .second_section_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #EE6352;
+    padding: 40px 0;
+
+    div {
+      height: 32%;
+      width: 75%;
+      margin: auto;
+
+      h2 {
+        color: white;
+        font-size: 42;
+
+        span {
+          font-size: 70px;
+          font-weight: bold;
+          line-height: 105px;
+          color: rgba(229, 229, 229, 0.3);
+        }
+      }
+
+      p {
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.third_section {
+  position: relative;
+  top: 350px;
+
+  div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
     hr {
-      width: 100%;
-      height: 5px;
-      color: lightgrey;
+      background-color: #EE6352;
+      height: 1px;
+      width: 250px;
     }
-  }
 
-  span {
-    font-weight: bold;
+    h2 {
+      font-weight: bold;
+      margin: 0 20px;
+
+      span {
+        color: #EE6352;
+      }
+    }
   }
 }
 
-.hp_container {
-  width: 100%;
-  padding: 20px;
-  // height: 200px;
-  // background-color: rgb(244, 244, 244);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  h2 {
-    margin: 20px 0;
-    font-weight: bold;
-  }
 
-  hr {
-    height: 2px;
-    width: 100px;
-    background-color: red;
-  }
 
-  .hp_buttons {
-    width: 80%;
-    height: 450px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-around;
-    // border: 2px solid black;
+// .welcome {
+//   width: 100%;
+//   height: 500px;
+//   display: flex;
+//   justify-content: center;
+
+//   h1 {
+//     text-align: left;
+//   }
+
+//   .innerText {
+//     width: 80%;
+//     height: 90%;
+//     padding-top: 40px;
+
+//     h5 {
+//       font-weight: bold;
+//     }
+
+//     hr {
+//       width: 100%;
+//       height: 5px;
+//       color: lightgrey;
+//     }
+//   }
+
+//   span {
+//     font-weight: bold;
+//   }
+// }
+
+// .hp_container {
+//   width: 100%;
+//   padding: 20px;
+//   // height: 200px;
+//   // background-color: rgb(244, 244, 244);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+
+//   h2 {
+//     margin: 20px 0;
+//     font-weight: bold;
+//   }
+
+//   hr {
+//     height: 2px;
+//     width: 100px;
+//     background-color: red;
+//   }
+
+//   .hp_buttons {
+//     width: 80%;
+//     height: 450px;
+//     margin: 100px auto;
+//     display: flex;
+//     justify-content: space-around;
+//     // border: 2px solid black;
     
-    .card {
-      width: 25%;
-      height: 95%;
-      border: 1px solid lightgrey;
-      margin: auto;
-      border-radius: 5px;
+//     .card {
+//       width: 25%;
+//       height: 95%;
+//       border: 1px solid lightgrey;
+//       margin: auto;
+//       border-radius: 5px;
 
-      .card_image {
-        width: 100%;
-        height: 40%;
-        background-color: cadetblue;
-        display: flex;
-        justify-content: center;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+//       .card_image {
+//         width: 100%;
+//         height: 40%;
+//         background-color: cadetblue;
+//         display: flex;
+//         justify-content: center;
+//         border-top-left-radius: 3px;
+//         border-top-right-radius: 3px;
 
-        img {
-          width: 100%;
-        }
-      }
+//         img {
+//           width: 100%;
+//         }
+//       }
 
-      .card_info {
-        padding: 10px;
+//       .card_info {
+//         padding: 10px;
 
-        h3 {
-          font-weight: bold;
-          margin: 20px 0;
-        }
+//         h3 {
+//           font-weight: bold;
+//           margin: 20px 0;
+//         }
 
-        button {
-          margin: 20px 0;
-          padding: 10px;
-          width: 40%;
-          height: 50px;
-          background-color: white;
-          font-weight: bold;
-          border-radius: 5px;
-          border: 1px solid black;
-        }
-      }
-    }
-  }
-}
+//         button {
+//           margin: 20px 0;
+//           padding: 10px;
+//           width: 40%;
+//           height: 50px;
+//           background-color: white;
+//           font-weight: bold;
+//           border-radius: 5px;
+//           border: 1px solid black;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 1100px) {
-  .welcome {
-    height: 600px;
-  }
-}
+// @media screen and (max-width: 1100px) {
+//   .welcome {
+//     height: 600px;
+//   }
+// }
 
-@media screen and (max-width: 900px) {
-  .welcome {
-    height: 700px;
-  }
+// @media screen and (max-width: 900px) {
+//   .welcome {
+//     height: 700px;
+//   }
 
-  .hp_container {
-    height: 300px;
+//   .hp_container {
+//     height: 300px;
 
-    .hp_buttons {
-      flex-direction: column;
+//     .hp_buttons {
+//       flex-direction: column;
   
-      section {
-        width: 300px;
-        margin: 15px 0;
-      }
-    }
-  }
-}
+//       section {
+//         width: 300px;
+//         margin: 15px 0;
+//       }
+//     }
+//   }
+// }

@@ -18,13 +18,17 @@ class NavBar extends Component {
             <img src={logo} alt="Offshore Stainless Logo" />
           </div>
           <div className={styles.section_two}>
+            <div className={styles.links}>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/news">News</Link>
               <Link to="/products">Products</Link>
               <Link to="/processing">Processing</Link>
               <Link to="/technical">Technical</Link>
+            </div>
+            <div className={styles.contact}>
               <Link to="/contact">Contact</Link>
+            </div>
           </div>
         </div>
       </>
