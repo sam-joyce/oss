@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import styles from "./HomePage.module.scss";
+import { Link } from '@reach/router';
+
+import bar from "../Static/Images/bar.png";
+import sheet from "../Static/Images/sheet.png";
 import sparks from '../Static/Images/sparks.png';
+
 
 class HomePage extends Component {
   state = {}
@@ -11,7 +16,7 @@ class HomePage extends Component {
           <img src={sparks} alt="A steel cutting tool in use" />
           <div className={styles.text_wrapper}>
             <h1>We are, <span>Offshore Stainless Supplies Ltd.</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur eum accusamus earum enim commodi excepturi neque facilis quasi unde. Error ex perferendis deleniti pariatur possimus cupiditate omnis blanditiis iste!</p>
+            <p>OSSL was formed in 1999, and is now a market leader in the supply of high tensile stainless steel to the a variety of industries. In **** OSSL introduced the stockholding and processing of 1.4003 to its capabilities, moving to our current premises in Brownhills, UK.</p>
           </div>
         </section>
         <section className={styles.second_section}>
@@ -35,10 +40,27 @@ class HomePage extends Component {
         </section>
         <section className={styles.third_section}>
           <div>
-            <hr/>
+            <hr />
             <h2>Featured Products<span>.</span></h2>
-            <hr/>
+            <hr />
           </div>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda deserunt velit quas, nam at harum dolorum. Quam impedit aliquam eveniet, modi, unde porro perspiciatis doloremque.</h4>
+          <div className={styles.products}>
+            <article>
+              <img src={bar} alt="steel bar"/>
+              <h5>Steel Bar</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia cum molestias ut est quisquam, rerum, eaque cumque laudantium aliquam velit nihil harum expedita culpa delen.</p>
+            </article>
+            <article>
+              <img src={sheet} alt="steel sheet"/>
+              <h5>Steel Sheet</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia cum molestias ut est quisquam, rerum, eaque cumque laudantium aliquam velit nihil harum expedita culpa delen.</p>
+            </article>
+          </div>
+        </section>
+        <section className={styles.contact_banner}>
+          <h3>Want to get in touch?</h3>
+          <Link to="/contact"><button>Contact Us</button></Link>
         </section>
       </>
     );
@@ -77,7 +99,8 @@ export default HomePage;
 
 
 // class HomePage extends Component {
-//   state = {}
+//   state = {}<svg width="1920" height="452" viewBox="0 0 1920 452" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
 //   render() {
 //     return (
 //       <>
