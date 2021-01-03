@@ -26,7 +26,6 @@ class NavBar extends Component {
                 <NavLink to="/post">News</NavLink>
                 <NavLink to="/products">Products</NavLink>
                 <NavLink to="/processing">Processing</NavLink>
-                <NavLink to="/technical">Technical</NavLink>
               </div>
               <div className={styles.contact}>
                 <NavLink to="/contact">Contact</NavLink>
