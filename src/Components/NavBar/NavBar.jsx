@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
-import AboutPage from "../AboutPage";
-import News from "../News";
-import ProductPage from "../ProductPage";
-import ContactPage from "../ContactPage";
-
 import logo from "../Static/Images/oss-logo.png";
-
 
 class NavBar extends Component {
   state = {}
