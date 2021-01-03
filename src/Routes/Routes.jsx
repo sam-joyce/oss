@@ -1,50 +1,32 @@
 import React, { Component } from 'react';
-import { Router, globalHistory, Redirect } from "@reach/router";
+// import { Router, globalHistory, Redirect } from "@reach/router";
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import HomePage from '../Components/HomePage/HomePage';
 import AboutPage from "../Components/AboutPage/AboutPage";
-import DisclaimerPage from "../Components/DisclaimerPage/DisclaimerPage";
 import ContactPage from "../Components/ContactPage/ContactPage";
 import ProductPage from "../Components/ProductPage/ProductPage";
-import Accreditations from '../Components/Accreditations/Accreditations';
-import TechnicalPage from '../Components/TechnicalPage/TechnicalPage';
-import ProcessingPage from '../Components/ProcessingPage/ProcessingPage';
-import AlloyPage from '../Components/AlloyPage/AlloyPage';
-import News from '../Components/HomePage/News';
+import News from '../Components/News';
+import NewsArticle from "../Components/NewsArticle";
+import NavBar from '../Components/NavBar';
 
 
 class Routes extends Component {
-  state = {}
 
-
-  barProductsPage = () => {
-    globalHistory.navigate('/products')
-  };
-  
-  sheetProductsPage = () => {
-    globalHistory.navigate('/products/sheet')
-  };
-  
   render() {
     return (
       <>
-        <Router>
-          <HomePage 
-            path="/" 
-            barProductsPage={this.barProductsPage} 
-            sheetProductsPage={this.sheetProductsPage}
-          />
-          <AboutPage path="/about" />
-          <AlloyPage path="/alloys" />
-          <DisclaimerPage path="/disclaimer" />
-          <ContactPage path="/contact" />
-          <ProductPage path="/products" />
-          <ProcessingPage path="/processing" />
-          <News path="news" />
-          {/* <Accreditations path="/accreditations" /> */}
-          <TechnicalPage path="/technical" />
-          {/* <Redirect from="" to="/home" /> */}
-        </Router>
+        <BrowserRouter>
+          <NavBar />
+          <Switch>
+            <Route component={HomePage} path='/' exact />
+            <Route component={AboutPage} path='/about' />
+            <Route component={NewsArticle} path='/post/:slug' />
+            <Route component={News} path='/post' />
+            <Route component={ContactPage} path='/contact' />
+            <Route component={ProductPage} path='/products' />
+          </Switch>
+        </BrowserRouter>
       </>
     );
   }

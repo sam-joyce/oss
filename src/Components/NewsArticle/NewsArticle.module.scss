@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  article {
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 700px;
+        margin: 20px auto;
+      }
+
+      div {
+        div {
+          h1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+          }
+
+          div {
+            display: flex;
+            width: 400px;
+            margin: auto;
+
+            img {
+              width: 80px;
+              border-radius: 50%;
+            }
+
+            p {
+              color: #EE6352;
+              margin: auto;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .post_body {
+      width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+  }
+}

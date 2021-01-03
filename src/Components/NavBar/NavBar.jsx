@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-
-import { Link } from "@reach/router";
-import { AiFillLinkedin } from 'react-icons/ai';
-import { FaPhoneSquare } from 'react-icons/fa';
-
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import styles from "./NavBar.module.scss";
+
+import AboutPage from "../AboutPage";
+import News from "../News";
+import ProductPage from "../ProductPage";
+import ContactPage from "../ContactPage";
+
 import logo from "../Static/Images/oss-logo.png";
 
 
@@ -18,17 +20,17 @@ class NavBar extends Component {
             <img src={logo} alt="Offshore Stainless Logo" />
           </div>
           <div className={styles.section_two}>
-            <div className={styles.links}>
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/news">News</Link>
-              <Link to="/products">Products</Link>
-              <Link to="/processing">Processing</Link>
-              <Link to="/technical">Technical</Link>
-            </div>
-            <div className={styles.contact}>
-              <Link to="/contact">Contact</Link>
-            </div>
+              <div className={styles.links}>
+                <NavLink to="/" exact>Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/post">News</NavLink>
+                <NavLink to="/products">Products</NavLink>
+                <NavLink to="/processing">Processing</NavLink>
+                <NavLink to="/technical">Technical</NavLink>
+              </div>
+              <div className={styles.contact}>
+                <NavLink to="/contact">Contact</NavLink>
+              </div>
           </div>
         </div>
       </>
