@@ -35,7 +35,7 @@ const News = () => {
         <div className={styles.posts_container}>
           {postData && postData.map((post, index) => (
             <article key={index}>
-              <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+              <Link to={"/post/" + post.slug.current} key={post.slug.current} style={{ textDecoration: 'none' }}>
                 <span key={index}>
                   <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                   <span>

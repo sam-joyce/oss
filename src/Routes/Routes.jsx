@@ -9,6 +9,7 @@ import ProductPage from "../Components/ProductPage/ProductPage";
 import News from '../Components/News';
 import NewsArticle from "../Components/NewsArticle";
 import NavBar from '../Components/NavBar';
+import Nav from '../Components/Nav';
 
 
 class Routes extends Component {
@@ -17,7 +18,7 @@ class Routes extends Component {
     return (
       <>
         <BrowserRouter>
-          <NavBar />
+          <Nav />
           <Switch>
             <Route component={HomePage} path='/' exact />
             <Route component={AboutPage} path='/about' />
