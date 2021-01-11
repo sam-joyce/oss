@@ -49,6 +49,14 @@ main {
       width: 700px;
       margin: 30px auto;
       padding: 20px;
+
+      div {
+        width: 100%;
+
+        p {
+          margin: 15px 0;
+        }
+      }
     }
   }
 }

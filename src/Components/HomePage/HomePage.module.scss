@@ -224,7 +224,7 @@
       margin-top: -50%;
 
       h1 {
-        font-size: 40px;
+        font-size: 44px;
       }
     }
   }
@@ -234,15 +234,17 @@
     grid-template-rows: 1fr 1fr;
 
     .second_section_1 {
-      height: 300px;
+      height: 150px;
+      display: none;
       
       h2 {
         border-top: none;
+        font-size: 20px;
       }
     }
 
     .second_section_2 {
-      height: 720px;
+      height: 800px;
       padding-bottom: 80px;
 
       div {
@@ -264,7 +266,7 @@
   }
 
   .third_section {
-    margin-top: 300px;
+    margin-top: 200px;
 
     div {
       width: 75%;
@@ -279,6 +281,11 @@
 
       article {
         margin-top: 40px;
+
+        p {
+          width: 65%;
+          margin: auto;
+        }
       }
     }
   }

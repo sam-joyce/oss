@@ -111,66 +111,85 @@
     }
   }
 }
-// .about_container {
-//   width: 100%;
 
-//   .about_intro {
-//     width: 60%;
-//     height: 300px;
-//     padding: 50px;
-//     text-align: center;
-//     margin: 50px auto;
-//   }
+@media screen and (max-width: 1200px) {
+  .bios {
+    article {
+      img {
+        height: 220px !important;
+      }
+    }
+  }
+}
 
-//   .about_images {
-//     height: 350px;
-//     width: 80%;
-//     margin: 50px auto;
-//     // border: 2px solid black;
-//     border-radius: 10px;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     box-shadow: 0px 1px 12px 0px rgb(183, 141, 141)
-//     ;
+@media screen and (max-width: 1000px) {
+  .about_landing {
+    .text_wrapper {
+      h1 {
+        font-size: 44px;
+        line-height: 60px;
+      }
 
-//     div {
-//       width: 25%;
-//       height: 70%;
-//       text-align: center;
+      p {
+        font-size: 12px;
+        line-height: 30px;
+      }
+    }
+  }
 
-//       img {
-//         height: 65%;
-//         width: 80%;
-//         border-radius: 10px;
-//       }
+  .bios {
+    article {
+      img {
+        height: 190px !important;
+      }
+    }
+  }
+}
 
-//       h3 {
-//         margin: 20px 0;
-//       }
-//     }
-//   }
 
-//   .about_header {
-//     width: 60%;
-//     text-align: center;
-//     margin: 200px auto;
+@media screen and (max-width: 850px) {
+  .about_landing {
+    .text_wrapper {
+      padding-right: 60px;
 
-//     h2 {
-//       width: 70%;
-//       margin: 40px auto;
-//       font-size: 40px;
-//     }
-//   }
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
+      }
 
-//   .about_items {
-//     width: 90%;
-//     margin: 50px auto;
-//     padding: 20px;
-//     // border: 2px solid black;
-//     display: grid;
-//     gap: 50px;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr;
-//   }
-// }
+      p {
+        font-size: 10px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .mission {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .people {
+    div {
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .bios {
+    flex-direction: column;
+    article {
+      width: 70% !important;
+      img {
+        width: 70%;
+        height: 350px !important;
+      }
+    }
+  }
+}
