@@ -290,3 +290,32 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .landing {
+    .text_wrapper {
+      margin-top: -60%;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .landing {
+    .text_wrapper {
+      margin-top: -70%;
+      margin-left: 80px;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
