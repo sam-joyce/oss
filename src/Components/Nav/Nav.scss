@@ -1,10 +1,6 @@
-@import '../../styles/fonts';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/resets";
 
 .nav_items {
   height: 80px;
@@ -38,10 +34,10 @@
     .nav-links {
       text-decoration: none;
       padding: 0.5rem 1rem;
+      color: black;
     
       &:hover {
-        // border-bottom: 3px solid #EE6352;
-        color: #EE6352;
+        color: $primary;
         transition: all 0.2s ease-out;
         cursor: pointer;
       }
@@ -77,8 +73,8 @@
     }
 
     .nav-menu.active {
-      background: #EE6352;
-      color: #EE6352;
+      background: $primary;
+      color: $primary;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;

@@ -1,8 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/resets";
 
 main {
   article {
@@ -36,7 +34,7 @@ main {
             }
 
             p {
-              color: #EE6352;
+              color: $primary;
               margin: auto;
               height: 30px;
             }

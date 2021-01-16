@@ -1,8 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/resets";
 
 header {
   text-align: center;
