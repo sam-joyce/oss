@@ -1,0 +1,46 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/resets";
+
+.list_item {
+  width: 70%;
+  margin: auto;
+  padding: 10px 20px;
+  height: 450px;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  h2 {
+    color: black;
+    font-size: 32px;
+    margin: 10px 0;
+
+    span {
+      font-size: 70px;
+      font-weight: bold;
+      line-height: 105px;
+      color: #E5E5E5;
+    }
+  }
+
+  p {
+    color: #9B9B9B;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .list_item {
+    height: 350px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .list_item {
+    height: 300px;
+  }
+}
