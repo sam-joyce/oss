@@ -14,6 +14,7 @@
   h1 {
     font-weight: 700;
     font-size: 40px;
+    color: black;
   
     span {
       color: $primary;
@@ -42,6 +43,7 @@
         width: 80%;
         height: 200px;
         margin: auto;
+        border-radius: 2px;
       }
 
       span {
@@ -51,6 +53,7 @@
           margin: 20px 0;
           font-weight: bold;
           font-size: 22px;
+          color: black;
         }
       }
     }
