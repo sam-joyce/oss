@@ -66,6 +66,7 @@
     justify-content: space-around;
     background-color: $primary;
     padding: 40px 0;
+    border-bottom-left-radius: 2px;
 
     div {
       height: 32%;
@@ -140,6 +141,7 @@
       img {
         width: 400px;
         height: 300px;
+        border-radius: 2px;
       }
 
       h5 {
