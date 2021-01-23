@@ -36,8 +36,12 @@ const ProcessingPage = () => {
       })
   }
 
-  const handleToggle = () => {
-    setToggleProducts(!toggleProducts);
+  const handleToggleBar = () => {
+    setToggleProducts(true);
+  }
+
+  const handleToggleSheet = () => {
+    setToggleProducts(false);
   }
 
   useEffect(() => {
@@ -55,8 +59,8 @@ const ProcessingPage = () => {
           <div>
             <p>Learn more about the production methods we use to create our high-quality stainless steel bar and sheet. Just use the buttons below.</p>
             <div>
-              <button onClick={() => handleToggle()}>Sheet</button>
-              <button onClick={() => handleToggle()}>Bar</button>
+              <button onClick={() => handleToggleBar()}>Sheet</button>
+              <button onClick={() => handleToggleSheet()}>Bar</button>
             </div>
           </div>
         </div>
