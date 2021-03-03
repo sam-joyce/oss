@@ -19,7 +19,7 @@ const ProcessingPage = () => {
 
         const processes = query.docs.map(doc => doc.data());
         setBarProcesses(processes);
-        console.log(processes);
+        // console.log(processes);
       })
   }
 
@@ -57,7 +57,7 @@ const ProcessingPage = () => {
         <div className={styles.intro}>
           <h1>Our processes, <span>&<br /> production methods.</span></h1>
           <div>
-            <p>Learn more about the production methods we use to create our high-quality stainless steel bar and sheet. Just use the buttons below.</p>
+            <p>All of the above processes are available for customers to provide material on a free issue basis that we will provide the product you require, subject to the material condition we receive.</p>
             <div>
               <button onClick={() => handleToggleBar()}>Sheet</button>
               <button onClick={() => handleToggleSheet()}>Bar</button>

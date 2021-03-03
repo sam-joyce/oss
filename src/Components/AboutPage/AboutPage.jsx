@@ -12,7 +12,7 @@ class AboutPage extends Component {
     return (
       <>
         <section className={styles.about_landing}>
-          <img src={rig} alt="AN oil rig" />
+          <img src={rig} alt="An oil rig" />
           <div className={styles.text_wrapper}>
             <h1>About <span>Offshore Stainless Supplies</span></h1>
             <p>Offshore is now the market leader in the supply of cold drawn, high performance stainless steels, super duplex and nickels alloys. Complemented by the largest independent stock of ferritic stainless steel in Europe.</p>

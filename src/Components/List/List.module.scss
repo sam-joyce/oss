@@ -3,25 +3,14 @@
 @import "../../styles/resets";
 
 .list_item {
-  width: 70%;
-  margin: auto;
+  width: 85%;
+  margin: 40px auto;
   padding: 10px 20px;
-  height: 450px;
-  background: #FFFFFF;
-  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 
-  h2 {
-    color: black;
+  h3 {
+    color: $primary;
     font-size: 32px;
     margin: 10px 0;
-
-    span {
-      font-size: 70px;
-      font-weight: bold;
-      line-height: 105px;
-      color: #E5E5E5;
-    }
   }
 
   p {
