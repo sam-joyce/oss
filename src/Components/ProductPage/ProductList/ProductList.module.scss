@@ -1,10 +1,46 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "../../../styles/fonts";
+@import "../../../styles/variables";
+@import "../../../styles/resets";
 
-.products {
+.bar_container {
   width: 100%;
-  display: block;
+  // border: 2px solid black;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 30px;
+
+  article {
+    background-color: #FFFAFA;
+    padding: 20px;
+    // border: 2px solid black;
+    color: rgb(136, 136, 136);
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: lighter;
+
+      span {
+        font-size: 28px;
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: lighter;
+
+      span {
+        font-size: 18px;
+        color: $primary;
+      }
+    }
+  }
 }

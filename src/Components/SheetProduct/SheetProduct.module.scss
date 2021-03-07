@@ -1,0 +1,139 @@
+@import "../../styles/fonts";
+@import "../../styles/variables";
+@import "../../styles/resets";
+
+.button_container {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    width: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid $primary;
+    background-color: transparent;
+    color: $primary;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.speciality {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 200px auto;
+
+  h2 {
+    width: 40%;
+    font-weight: 700;
+    font-size: 44px;
+
+    span {
+    color: $primary;
+    }
+  }
+
+  p {
+    width: 55%;
+    color: #9B9B9B;
+
+    span {
+      color: $primary;
+      font-size: 18px;
+    }
+  }
+}
+
+.sheet_container {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 30px;
+
+  article {
+    background-color: #FFFAFA;
+    padding: 20px;
+    color: rgb(136, 136, 136);
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: $primary;
+
+      span {
+        font-size: 28px;
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      margin-top: 15px;
+      font-size: 16px;
+      font-weight: lighter;
+
+      span {
+        font-size: 18px;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.additional {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  // margin-top: 300px;
+
+  article {
+    width: 25%;
+    height: 300px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 22px;
+      margin: 20px 0;
+
+      span {
+        color: $primary;
+      }
+    }
+    
+    p {
+      font-weight: lighter;
+      color: #9B9B9B;
+      font-size: 14px;
+    }
+
+    ul {
+      font-weight: bold;
+        color: #9B9B9B;
+        font-size: 14px;
+      li {
+        margin: 10px 0;
+        
+      }
+    }
+  }
+}

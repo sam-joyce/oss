@@ -53,36 +53,33 @@
   }
 }
 
-
-.additional {
-  width: 90%;
+.button_container {
+  width: 60%;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
-  // margin-top: 300px;
 
-  article {
-    width: 25%;
-    height: 300px;
+  button {
+    width: 200px;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid $primary;
+    background-color: transparent;
+    color: $primary;
+    border-radius: 3px;
 
-    h3 {
-      font-weight: bold;
-      font-size: 22px;
-      margin: 20px 0;
-
-      span {
-        color: $primary;
-      }
-    }
-    
-    p {
-      font-weight: lighter;
-      color: #9B9B9B;
-      font-size: 14px;
+    &:hover {
+      background-color: $primary;
+      color: white;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
     }
   }
 }
+
 
 .contact_banner {
   width: 100%;
@@ -118,44 +115,3 @@
     }
   }
 }
-
-
-
-// .header {
-//   padding-left: 20px;
-//   background-color: rgb(228, 227, 227);
-//   margin-top: 20px;
-
-//   h1 {
-//     text-align: left;
-//     font-weight: bold;
-//   }
-
-//   hr {
-//     width: 40%;
-//     height: 20px;
-//     color: black;
-//     text-align: left !important;
-//   }
-// }
-
-// .product_buttons {
-//   width: 30%;
-//   height: 50px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin: 50px auto;
-
-//   button {
-//     height: 80%;
-//     width: 30%;
-//     border-radius: 5px;
-//     background-color: white;
-//   }
-// }
-
-// .products {
-//   width: 95%;
-//   margin: auto;
-// }
