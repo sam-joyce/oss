@@ -48,5 +48,12 @@
   p {
     width: 55%;
     color: #9B9B9B;
+
+    span {
+      color: $primary;
+      // font-size: 18px;
+    }
   }
+
+  
 }

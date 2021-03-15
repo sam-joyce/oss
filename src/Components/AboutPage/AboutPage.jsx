@@ -25,7 +25,7 @@ class AboutPage extends Component {
         <section className={styles.people}>
           <div>
             <h2>This is us, <span>the people that make Offshore.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sapiente non alias, eius inventore mollitia dolorem, consequuntur quibusdam possimus molestiae nostrum. Cumque aut voluptate exercitationem deserunt possimus, eligendi provident asperiores.</p>
+            <p>OSSL have an experienced commercial team with over 100 years of steel knowledge between them, a privately owned company willing to go that extra mile for all customers.</p>
           </div>
           <div className={styles.bios}>
             <article>

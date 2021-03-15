@@ -26,13 +26,7 @@ const ProductPage = () => {
         <button onClick={() => setPageToShow(true)}>Sheet</button>
         <button onClick={() => setPageToShow(false)}>Bar</button>
       </section>
-      {/* <BarProduct /> */}
       {isSheetShowing}
-      
-      <section className={styles.contact_banner}>
-        <h3>Want a quote?</h3>
-        <Link to="/contact"><button>Contact Us</button></Link>
-      </section>
     </>
   );
 }

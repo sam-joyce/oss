@@ -5,7 +5,7 @@ import { firestore } from "../../firebase";
 
 const SheetProduct = () => {
 
-  const [products, setProducts] = useState('');
+  const [products, setProducts] = useState([]);
   const [productShowing, setProductShowing] = useState([]);
 
   const fetchProducts = () => {
@@ -34,19 +34,19 @@ const SheetProduct = () => {
     <>
       <section className={styles.speciality}>
         <h2>Our stainless steel sheet, <span>1.4003.</span></h2>
-        <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance. <br /> <br /> In addition type 1.4003 is weldable and formable allowing it to be fabricated using conventional techniques.<br/><span>*Available widths in coil.</span></p>
+        <p>Type 1.4003 stainless steel is a utility ferritic stainless steel, often used in place of mild steel. It offers the benefits of more highly alloyed stainless steels such as strength, corrosion and abrasion resistance, durability and low maintenance. <br /> <br /> In addition type 1.4003 is weldable and formable allowing it to be fabricated using conventional techniques.<br/><span>*Also available widths in coil. <br/> Scroll down to see our product list.</span></p>
       </section>
 
-      <section className={styles.button_container}>
+      {/* <section className={styles.button_container}>
         <button onClick={(event) => filterShownProducts(event)}>420</button>
         <button onClick={(event) => filterShownProducts(event)}>1.4003</button>
-      </section>
+      </section> */}
 
       <section className={styles.sheet_container}>
-        {productShowing.map((product, index) => (
+        {products.sort((a, b) => a.size - b.size).map((product, index) => (
           <article key={index}>
             <h3>{product.category}</h3>
-            <h5>Size: {product.size}</h5>
+            <h5>Size: {product.size}mm</h5>
             <h5>Dimensions: {product.dimensions}</h5>
           </article>
         ))}

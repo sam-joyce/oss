@@ -26,15 +26,15 @@ class HomePage extends Component {
           <div className={styles.second_section_2}>
             <div>
               <h2><span>01.</span> Oil & Gas...</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod a unde ducimus inventore ipsa culpa quos soluta amet voluptate. Sint blanditiis consequuntur quibusdam in possimus porro eos et mollitia!</p>
+              <p>We supply energy and oil and gas companies and their subcontractors with an extensive range of fully traceable certified material in the UK and across the world.  OSSL are renowned for manufacturing cold drawn bar to the energy and Oil and Gas industries to ASTM, NORSOK and NACE standards.</p>
             </div>
             <div>
               <h2><span>02.</span> Transport...</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod a unde ducimus inventore ipsa culpa quos soluta amet voluptate. Sint blanditiis consequuntur quibusdam in possimus porro eos et mollitia!</p>
+              <p>Supplying transport companies for over 20 years, OSSL is a key supplier to the UK largest road transport companies and subcontractors around the UK.</p>
             </div>
             <div>
-              <h2><span>03.</span> Internet Providers...</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod a unde ducimus inventore ipsa culpa quos soluta amet voluptate. Sint blanditiis consequuntur quibusdam in possimus porro eos et mollitia!</p>
+              <h2><span>03.</span> Commercial...</h2>
+              <p>OSSL manufacture and supply to many different industries including, Automotive, Construction and many more, OSSL are known worldwide for quality and service.</p>
             </div>
           </div>
         </section>
@@ -44,23 +44,19 @@ class HomePage extends Component {
             <h2>Featured Products<span>.</span></h2>
             <hr />
           </div>
-          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda deserunt velit quas, nam at harum dolorum. Quam impedit aliquam eveniet, modi, unde porro perspiciatis doloremque.</h4>
+          <h4>From cold drawn bar to stainless steel sheet OSSL have the vast knowledge and stock to supply all different industries worldwide.</h4>
           <div className={styles.products}>
             <article>
               <img src={bar} alt="steel bar"/>
               <h5>Steel Bar</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia cum molestias ut est quisquam, rerum, eaque cumque laudantium aliquam velit nihil harum expedita culpa delen.</p>
+              <p>We stock, Cold Drawn bar in Round, Hexagonal, Rectangular and Square sections. These can be supplied in full lengths or cut to size. OSSL specialise in the manufacture and supply of cold drawn, close tolerance sections in hexagonal, square, rectangular and round forms for the production of valves bodies, fittings and fasteners.</p>
             </article>
             <article>
               <img src={sheet} alt="steel sheet"/>
               <h5>Steel Sheet</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia cum molestias ut est quisquam, rerum, eaque cumque laudantium aliquam velit nihil harum expedita culpa delen.</p>
+              <p>OSSL are Europe’s Largest Stockholder of 1.4003 stainless steel,  from 1 mm to 30 mm OSSL will have you covered with a cut to length line that can cut up to 8 mm thick.</p>
             </article>
           </div>
-        </section>
-        <section className={styles.contact_banner}>
-          <h3>Want to get in touch?</h3>
-          <Link to="/contact"><button>Contact Us</button></Link>
         </section>
       </>
     );

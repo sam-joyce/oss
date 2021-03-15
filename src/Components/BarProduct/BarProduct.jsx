@@ -32,15 +32,16 @@ const BarProduct = () => {
 
   return (
     <>
-    <section className={styles.speciality}>
-        <h2>Our stainless steel <br/><span>Bar</span></h2>
-        <p>In addition to cold drawn materials, we can also offer forged sections either in the fully machined condition or black as forged for customers to finish themselves. <br/><br/> Our factory in the West Midlands has cold drawing, linishing, roll marking and straightening facilities which enables us to offer prompt delivery times for special customer requirements.</p>
-      </section>
       <section className={styles.button_container}>
         <button onClick={(event) => filterShownProducts(event)}>Hexagonal</button>
         <button onClick={(event) => filterShownProducts(event)}>Round</button>
         <button onClick={(event) => filterShownProducts(event)}>Flat/Square</button>
       </section>
+      <section className={styles.speciality}>
+        <h2>Our stainless steel <br /><span>Bar</span></h2>
+        <p>In addition to cold drawn materials, we can also offer forged sections either in the fully machined condition or black as forged for customers to finish themselves. <br /><br /> Our factory in the West Midlands has cold drawing, linishing, roll marking and straightening facilities which enables us to offer prompt delivery times for special customer requirements.<br/><span>Scroll down to see product our list.</span></p>
+      </section>
+
       <ProductList data={productShowing} />
     </>
   )
