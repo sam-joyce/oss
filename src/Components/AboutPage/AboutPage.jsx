@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import styles from "./AboutPage.module.scss";
+import AboutItem from '../AboutItem';
+import staff from "../../data/staff";
 
 import rig from "../Static/Images/oil-rig.png";
-import chris from '../Static/Images/4926.jpg';
-import keith from '../Static/Images/4734.jpg';
-import paul from '../Static/Images/5134.jpg';
 
 class AboutPage extends Component {
   state = {}
@@ -28,21 +27,7 @@ class AboutPage extends Component {
             <p>OSSL have an experienced commercial team with over 100 years of steel knowledge between them, a privately owned company willing to go that extra mile for all customers.</p>
           </div>
           <div className={styles.bios}>
-            <article>
-              <img src={chris} alt="MD"/>
-              <h3>Chris Joyce</h3>
-              <h5>FOUNDER, MANAGING DIRECTOR</h5>
-            </article>
-            <article>
-              <img src={keith} alt="CD"/>
-              <h3>Keith Maskell</h3>
-              <h5>COMMERCIAL DIRECTOR</h5>
-            </article>
-            <article>
-              <img src={paul} alt="FD"/>
-              <h3>Paul Kingston</h3>
-              <h5>FINANCE DIRECTOR</h5>
-            </article>
+            {staff.map((s, index) => <AboutItem member={s} key={index} />)}
           </div>
         </section>
       </>
