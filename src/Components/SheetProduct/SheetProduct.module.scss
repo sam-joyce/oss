@@ -31,9 +31,9 @@
 .speciality {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  // align-items: center;
   width: 90%;
-  margin: 200px auto;
+  margin: 100px auto;
 
   h2 {
     width: 50%;
@@ -47,9 +47,10 @@
 
   div {
     margin-left: 50px;
+
     article {
       width: 85%;
-      // height: 300px;
+      height: 250px;
   
       h3 {
         font-weight: bold;
@@ -89,6 +90,39 @@
   }
 }
 
+.additional {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  // margin-top: 300px;
+
+  article {
+    width: 85%;
+    margin: 0 20px;
+    // height: 300px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 22px;
+      margin: 20px 0;
+
+      span {
+        color: $primary;
+      }
+    }
+    
+    div {
+      p {
+        font-weight: lighter;
+        color: #9B9B9B;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 .sheet_container {
   width: 100%;
   margin: 20px auto;
@@ -101,6 +135,8 @@
     background-color: #FFFAFA;
     padding: 20px;
     color: rgb(136, 136, 136);
+    width: 90%;
+    height: 200px;
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -122,42 +158,12 @@
       margin-top: 15px;
       font-size: 16px;
       font-weight: lighter;
+      color: grey;
 
       span {
         font-size: 18px;
         color: $primary;
       }
-    }
-  }
-}
-
-.additional {
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 100px auto;
-  // margin-top: 300px;
-
-  article {
-    width: 85%;
-    margin: 0 20px;
-    // height: 300px;
-
-    h3 {
-      font-weight: bold;
-      font-size: 22px;
-      margin: 20px 0;
-
-      span {
-        color: $primary;
-      }
-    }
-    
-    p {
-      font-weight: lighter;
-      color: #9B9B9B;
-      font-size: 14px;
     }
   }
 }
