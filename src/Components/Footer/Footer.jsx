@@ -9,7 +9,7 @@ import rig from "../Static/Images/oss-rig.png";
 class Footer extends Component {
   render() {
     return (
-      <>
+      <section className={styles.footer_container}>
         <ContactBanner />
         <section className={styles.footer}>
           <img src={rig} alt="Offshore Stainless Oil Rig" />
@@ -21,7 +21,7 @@ class Footer extends Component {
             <a href="https://www.linkedin.com/company/offshore-stainless-supplies-ltd/" target="__blank" ><FaLinkedinIn /></a>
           </div>
         </section>
-      </>
+      </section>
     )
   }
 }
